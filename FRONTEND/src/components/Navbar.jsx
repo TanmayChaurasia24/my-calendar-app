@@ -86,11 +86,11 @@ const Navbar = () => {
         </div>
 
         <button
-className="ml-4 text-white focus:outline-none"
-onClick={() => navigate("/profile")}
->
-<FontAwesomeIcon icon={faUserCircle} size="2x" />
-</button>
+          className="ml-4 text-white focus:outline-none"
+          onClick={() => navigate("/profile")}
+        >
+          <FontAwesomeIcon icon={faUserCircle} size="2x" />
+        </button>
 
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
@@ -109,25 +109,49 @@ onClick={() => navigate("/profile")}
           <div className="flex flex-col space-y-4 mt-4">
             {!isloggedin ? (
               <>
-                <Link to="/" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Home
                 </Link>
-                <Link to="/register" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/register"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Signup
                 </Link>
-                <Link to="/login" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/login"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Login
                 </Link>
-                <Link to="/AboutUs" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/AboutUs"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   About Us
                 </Link>
-                <Link to="/ContactUs" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/ContactUs"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Contact Us
                 </Link>
               </>
             ) : (
               <>
-                <Link to="/" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Home
                 </Link>
                 <button
@@ -139,10 +163,18 @@ onClick={() => navigate("/profile")}
                 >
                   Logout
                 </button>
-                <Link to="/AboutUs" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/AboutUs"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   About Us
                 </Link>
-                <Link to="/ContactUs" className="hover:text-gray-300" onClick={toggleMenu}>
+                <Link
+                  to="/ContactUs"
+                  className="hover:text-gray-300"
+                  onClick={toggleMenu}
+                >
                   Contact Us
                 </Link>
               </>
@@ -155,5 +187,3 @@ onClick={() => navigate("/profile")}
 };
 
 export default Navbar;
-
-
