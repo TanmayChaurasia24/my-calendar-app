@@ -26,8 +26,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
+    <nav className="navbar bg-slate-900">
+      <div className="navbar-left flex justify-center items-center">
         <Link to="/" className="navbar-logo">
           <FontAwesomeIcon
             icon={faCalendarAlt}
@@ -37,7 +37,7 @@ const Navbar = () => {
           <span className="navbar-title">CALENDAR APP</span>
         </Link>
       </div>
-      <div className="navbar-right">
+      <div className="navbar-right font-sans">
         <div className="gap-3 flex items-center justify-center">
           {!isloggedin ? (
             <>
@@ -56,7 +56,7 @@ const Navbar = () => {
             </>
           )}
         </div>
-        <button className="profile-button">
+        <button className="profile-button bg-transparent">
           <FontAwesomeIcon icon={faUserCircle} size="2x" onClick={() => navigate("/profile")}/>
         </button>
       </div>
